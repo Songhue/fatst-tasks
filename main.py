@@ -66,4 +66,8 @@ def get_completed_tasks():
 
 @app.get("/", tags=["root"])
 def read_root():
-    return {"message": "Welcome to the Task API"}
+    return {
+        "message": "Welcome to the Task API",
+        "endpoint": "https://fatst-tasks.vercel.app/tasks/",
+        "swagger documentation": "https://fatst-tasks.vercel.app/docs"
+    }
